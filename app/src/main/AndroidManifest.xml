@@ -23,13 +23,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ListarSMS"></activity>
-
-        <service android:name=".Cronometro"
-            android:enabled="true"
-            android:exported="true">
-
-        </service>
     </application>
 
 </manifest>

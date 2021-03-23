@@ -55,7 +55,7 @@ public class Tarea1 extends AppCompatActivity implements Runnable {
                 null, null, null);
 
         //while (cursor.moveToNext()) {
-        for (int f=0; f<2; f++) {
+        for (int f=0; f<5; f++) {
             cursor.moveToPosition(f);
             for (int i = 0; i < cursor.getColumnCount(); i++) {
                 Log.d(cursor.getColumnName(i) + "", " (" + i +") "+cursor.getString(i) + "");

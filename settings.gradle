@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Moviles_TP2_Servicio"

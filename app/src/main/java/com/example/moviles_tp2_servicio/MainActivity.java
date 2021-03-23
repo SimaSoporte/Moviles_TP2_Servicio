@@ -19,8 +19,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Chronometer chronometer;
-
     // TUTORIALES
     //COMO CREAR UN SERVICE EN ANDROID
     //https://programandoointentandolo.com/2014/07/crear-service-en-android.html
@@ -45,11 +43,14 @@ public class MainActivity extends AppCompatActivity {
         // Leer los sms del celular
         //displaySmsLog();
 
-        Tarea1 tarea1 = new Tarea1();
-        Thread trabajador1 = new Thread(tarea1, "trabajador1");
-        trabajador1.start();
+        //Tarea1 tarea1 = new Tarea1();
+        //Thread trabajador1 = new Thread(tarea1, "trabajador1");
+        //trabajador1.start();
 
-        Log.d("mensaje", "onCreate del MainActivity");
+        Intent i = new Intent(this, SrvListarSMS.class);
+        startService(i);
+
+        Log.d("mensaje", Thread.currentThread().getName() +"onCreate del MainActivity");
 
     }
 
@@ -60,7 +61,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void IniciarComponentes() {
-        chronometer = findViewById(R.id.chronometer);
 
     }
 
@@ -98,10 +98,6 @@ public class MainActivity extends AppCompatActivity {
             Log.d("One row finished", "**************************************************");
         }
 
-    }
-
-    public void iniciarCronometro(Chronometer chronometer) {
-        chronometer.start();
     }
 
 }

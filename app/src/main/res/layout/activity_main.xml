@@ -15,31 +15,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
-        android:text="Esta app inicia un servicio para leer lo mensajes. El cronometro devuelve un tiempo transcurrido, con el cual se activa"/>
-
-         <Chronometer
-            android:id="@+id/chronometer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="3dp"/>
-
-        <Button
-            android:id="@+id/btnStart"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Iniciar cronometro" />
-
-        <Button
-            android:id="@+id/btnPause"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Pausar cronometro" />
-
-        <Button
-            android:id="@+id/btnReset"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Resetear cronometro" />
+        android:text="Esta app inicia un servicio que lee los SMS del celular y muestra los últimos 5."/>
 
 
-    </LinearLayout>
+</LinearLayout>

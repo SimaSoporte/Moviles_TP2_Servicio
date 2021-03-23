@@ -4,7 +4,6 @@
 
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
-
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
@@ -15,6 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Moviles_TP2_Servicio">
 
+        <service
+            android:name=".SrvListarSMS"
+            android:enabled="true"
+            android:exported="true">
+
+        </service>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
